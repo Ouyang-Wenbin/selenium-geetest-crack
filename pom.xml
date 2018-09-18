@@ -4,16 +4,16 @@
   <groupId>com.github.wycm</groupId>
   <artifactId>selenium-geetest-crack</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>selenium-geetest-crack</name>
   <url>http://maven.apache.org</url>
 
   <dependencies>
     <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-server</artifactId>
-      <version>3.0.1</version>
-    </dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-server</artifactId>
+  <version>3.9.1</version>
+</dependency>
     <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
     <dependency>
       <groupId>org.jsoup</groupId>
