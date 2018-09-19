@@ -39,9 +39,9 @@ public class QingKeOfGeetest {
                 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                 driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
                 driver.get("http://gytv.qingk.cn/activity-vote_item-info/urturovwqecfsbtwbspdeqepbvvvqrwb/caea8e03cd5c42eeb4e2fadc3578bc48/ba1fb321bc204f8cb98c7ba4053612d0/075336fb36d04f00b76a7aa5b96e05c9?from=timeline&isappinstalled=0");
-                Thread.sleep(2 * 1000);
+                Thread.sleep(1 * 1000);
                 driver.findElement(By.className("voteButton")).click();
-                Thread.sleep(3 * 1000);
+                Thread.sleep(2 * 1000);
                 Actions actions = new Actions(driver);
                 BufferedImage image = null;
                 int n = 0;
@@ -73,10 +73,9 @@ public class QingKeOfGeetest {
 					}
                     Thread.sleep(1000);
 				} while (n<5);
-                Thread.sleep(3 * 1000);
+                Thread.sleep(2 * 1000);
                 System.out.println("刷票:-----------------------"+(i+1)+"次");
-                driver.getSessionStorage().clear();
-                driver.getLocalStorage().clear();
+                driver.manage().deleteAllCookies();
             } catch (Exception e) {
             }
         }
